@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+main{
+    background-color: rgba(146, 7, 201, 0.63);
+    border-radius: 10px;
+    padding: 5px 0;
+    margin: 0 450px;
+}
+
+h1{
+    font-size: 30px;
+}
+
+body{
+    text-align: center;
+    background-color: #8e9dcc;
+}
+
+div{
+    border-radius: 10px;
+}
+
+select{
+    overflow-y: hidden;
+    border-radius: 8px;
+    margin-top: 15px;
+    width: 150px;
+    text-align: center;
+    box-shadow: 4.5px 4.5px 3px #0000009f
+}
+
+input{
+    border-radius: 10px;
+}
+
+.finalizar{
+    margin-top: 5px;
+}
+
+#numero{
+    overflow: hidden;
+}

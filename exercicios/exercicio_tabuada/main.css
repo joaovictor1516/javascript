@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+h1{
+    font-size: 30px;
+}
+
+body{
+    text-align: center;
+    background-color: #8e9dcc;
+}
+
+div{
+    border-radius: 10px;
+}
+
+select{
+    overflow-y: hidden;
+    border-radius: 8px;
+    margin-top: 15px;
+    width: 150px;
+    text-align: center;
+    box-shadow: 4.5px 4.5px 3px #0000009f
+}
+
+.botao{
+    border-radius: 10px;
+    box-shadow: 4.5px 4.5px 3px #0000009f
+}
+
+#input_numero{
+    border-radius: 8px;
+    box-shadow: 4.5px 4.5px 3px #0000009f;
+}
+
+footer{
+    margin-top: 8px;
+    font-size: 16px;
+}

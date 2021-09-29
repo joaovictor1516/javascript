@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+body{
+    text-align:  center;
+    background-color: #ff9fb2;
+    align-items: center;
+}
+
+section{
+    background-color: #3d90d4;
+    border-radius: 20px;
+    width: 250px;
+    margin-left: 620px;
+    margin-top: 15px;
+}
+
+p{
+    margin-block-end: -15px;
+}
+
+input{
+    border-radius: 15px;
+}
+
+footer{
+    margin-top: 15px;
+}
+
+.inicio_p{
+    padding-top: 10px;
+}
+
+.fim_p{
+    margin-left: 10px;
+}
+
+.botao{
+    margin: 3px 0 5px;
+    border-radius: 10px
+}
+
+#resultado{
+    margin: 5px 0;
+}

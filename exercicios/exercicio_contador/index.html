@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vamos contar</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="shortcut icon" href="icone/professor.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>
+            Vamos contar
+        </h1>
+    </header>
+    
+    <section>
+        <div class="numeros">
+            <p class="inicio_p">Inicio <input type="number" name="inicio" id="inicio"></p>
+             
+            <p class="fim_p">Fim <input type="number" name="fim" id="fim"></p>
+
+            <p class="passo_p">Passo <input type="number" name="passo" id="passo" min="0"></p>    
+
+            <p class="botao_p"><input type="button" value="Contar" name="botao" class="botao" onclick="contar()"></p>
+        </div>
+
+        <div id="resultado"></div>
+    </section>
+    <footer>
+        <div>&copy; Jão</div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
