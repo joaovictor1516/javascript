@@ -25,6 +25,7 @@ function adicionar(){
        alert(lista);
        let elemento = document.createElement('object');
        elemento.text = input_numero.value;
+       select_lista.appendChild(elemento);
     } else{
         alert('não foi');
     }
@@ -33,4 +34,5 @@ function adicionar(){
 function finalizar(){
     let mostra_resultado = document.querySelector('div#mostra_resultado');
     mostra_resultado.innerText = `Tamanho da lista: ${lista.length}`;
+    mostra_resultado.innerText = `Elementos da lista: ${lista}`;
 }
