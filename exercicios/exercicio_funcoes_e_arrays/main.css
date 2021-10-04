@@ -25,9 +25,10 @@ select{
     overflow-y: hidden;
     border-radius: 8px;
     margin-top: 15px;
-    width: 150px;
+    width: 180px;
     text-align: center;
-    box-shadow: 4.5px 4.5px 3px #0000009f
+    box-shadow: 4.5px 4.5px 3px #0000009f;
+    padding: 8px 0;
 }
 
 input{

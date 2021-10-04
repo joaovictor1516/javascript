@@ -23,7 +23,7 @@ function calcular(){
         if(n1 === n1 || soma === multiplicacao){
             calculo.push(n1);
         } else { 
-            calculo.push(" + " + n1 + " + ");
+            calculo.push(` + ${n1} + `);
         }
         n1 =+ n1;
     } 

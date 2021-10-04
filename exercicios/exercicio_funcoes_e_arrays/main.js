@@ -20,19 +20,23 @@ function confereLista(numero, lista){
 
 function adicionar(){
     if(confereIntervalo(input_numero.value) && !confereLista(input_numero.value, lista)){
-       lista.push(input_numero.value);
-       alert('foi');
-       alert(lista);
-       let elemento = document.createElement('object');
-       elemento.text = input_numero.value;
+       lista.push(Number(input_numero.value));
+       let elemento = document.createElement('option');
+       elemento.text = `${input_numero.value} Foi adicionado na lista.`;
        select_lista.appendChild(elemento);
-    } else{
-        alert('não foi');
+    } 
+    else if(input_numero.value.length === 0){
+        alert('Por favor digite um valor entre 1 e 100.');
+    } 
+    else if(confereLista(input_numero.value, lista)){
+        alert('Esse número já foi listado, por favor digite outro.');
+    }
+    else{
+        alert('Número maior que 100 ou menor que 1.');
     }
 }
 
 function finalizar(){
     let mostra_resultado = document.querySelector('div#mostra_resultado');
-    mostra_resultado.innerText = `Tamanho da lista: ${lista.length}`;
-    mostra_resultado.innerText = `Elementos da lista: ${lista}`;
+    mostra_resultado.innerHTML = `Tamanho da lista: ${lista.length}` + `<br>Elementos da lista: ${lista}` + `<br>Maior elemento da lista: ${Math.min(...lista)}` + `<br>Menor elemento da lista: ${Math.min(...lista)}`;
 }
