@@ -11,12 +11,12 @@ function calcular(){
             let resultado = document.createElement('option');
             resultado.text = `${constante} x ${numero} = ${constante*numero}`;
             select_resultado.appendChild(resultado);
-            resultado.addEventListener("click",calculo(constante, numero));
+            //resultado.addEventListener("click",calculo(constante, numero));
         }
     }
 }
 
-function calculo(n1,n2){
+/*function calculo(n1,n2){
     let calculo = [];
     let multiplicacao = n1*n2;
     while(n1 <= multiplicacao){
@@ -27,5 +27,5 @@ function calculo(n1,n2){
         }
         n1 =+ n1;
     } 
-    //return mostra_calculo.innerText = calculo;
-}
+    return mostra_calculo.innerText = calculo;
+}*/
