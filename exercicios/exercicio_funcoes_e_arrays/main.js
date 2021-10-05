@@ -5,7 +5,8 @@ let lista = [];
 function confereIntervalo(numero){
     if(Number(numero) >= 1 && Number(numero) <= 100){
        return true;
-    } else {
+    } 
+    else {
        return false;
     }
 }
@@ -13,7 +14,8 @@ function confereIntervalo(numero){
 function confereLista(numero, lista){
     if(lista.indexOf(Number(numero)) != -1){
         return true;
-    } else{
+    } 
+    else{
         return false;
     }
 }
@@ -62,11 +64,21 @@ function remover(){
 function finalizar(){
     if(select_lista.length === 0 || lista.length === 0){
         alert('A lista está vazia.');
-    } else{
+    } 
+    else{
         let mostra_resultado = document.querySelector('div#mostra_resultado');
         mostra_resultado.innerHTML = `Tamanho da lista: ${lista.length}`;
         mostra_resultado.innerHTML += `<br>Elementos da lista: ${lista}`;  
         mostra_resultado.innerHTML += `<br>Maior elemento da lista: ${Math.min(...lista)}`;
         mostra_resultado.innerHTML += `<br>Menor elemento da lista: ${Math.min(...lista)}`;
     }
+}
+function limpar(){
+    if(select_lista.length === 0 && lista.length === 0){
+        alert('A lista está vazia.');
+    } 
+    else{
+        lista.splice(0, lista.length);
+        select_lista.innerHTML = '';
+        }
 }
