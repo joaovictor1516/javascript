@@ -22,7 +22,7 @@ function adicionar(){
     if(confereIntervalo(input_numero.value) && !confereLista(input_numero.value, lista)){
        lista.push(Number(input_numero.value));
        let elemento = document.createElement('option');
-       elemento.text = `${input_numero.value} Foi adicionado na lista.`;
+       elemento.text = `${input_numero.value} Foi listado.`;
        select_lista.appendChild(elemento);
     } 
     else if(input_numero.value.length === 0){
@@ -32,8 +32,12 @@ function adicionar(){
         alert('Esse número já foi listado, por favor digite outro.');
     }
     else{
-        alert('Número maior que 100 ou menor que 1.');
+        alert('Número menor que 1 ou maior que 100.');
     }
+    input_numero.value = '';
+    input_numero.focus();
+    mostra_resultado.innerText = '';
+    mostra_resultado.focus();
 }
 
 function finalizar(){
