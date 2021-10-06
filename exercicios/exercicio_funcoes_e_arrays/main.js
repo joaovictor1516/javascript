@@ -6,7 +6,7 @@ function confereIntervalo(numero){
     if(Number(numero) >= 1 && Number(numero) <= 100){
        return true;
     } 
-    else {
+    else{
        return false;
     }
 }
@@ -36,6 +36,7 @@ function adicionar(){
     else{
         alert('Número menor que 1 ou maior que 100.');
     }
+
     input_numero.value = '';
     input_numero.focus();
     mostra_resultado.innerText = '';
@@ -55,10 +56,10 @@ function remover(){
      else {
          alert('Esse número não está listado.');
      }
+
     input_numero.value = '';
     input_numero.focus();
     mostra_resultado.innerText = '';
-    mostra_resultado.focus();
 }
 
 function finalizar(){
@@ -66,11 +67,23 @@ function finalizar(){
         alert('A lista está vazia.');
     } 
     else{
+        let maior = lista[0];
+        let menor = lista[0];
+
+        for (let pos in lista){
+            if(lista[pos] > maior){
+                maior = lista[pos];
+            }
+            else if(lista[pos] < menor){
+                menor = lista[pos];
+            }
+        }
+
         let mostra_resultado = document.querySelector('div#mostra_resultado');
         mostra_resultado.innerHTML = `Tamanho da lista: ${lista.length}`;
         mostra_resultado.innerHTML += `<br>Elementos da lista: ${lista}`;  
-        mostra_resultado.innerHTML += `<br>Maior elemento da lista: ${Math.min(...lista)}`;
-        mostra_resultado.innerHTML += `<br>Menor elemento da lista: ${Math.min(...lista)}`;
+        mostra_resultado.innerHTML += `<br>Maior elemento da lista: ${maior}`;
+        mostra_resultado.innerHTML += `<br>Menor elemento da lista: ${menor}`;
     }
 }
 function limpar(){
@@ -80,5 +93,6 @@ function limpar(){
     else{
         lista.splice(0, lista.length);
         select_lista.innerHTML = '';
+        mostra_resultado.innerHTML = '';
         }
 }
