@@ -51,6 +51,10 @@ function contar(){
             }
         }
 
+        if(inicio === fim){
+            window.alert("Os números de inicio e fim são iguais, por favor altere os valor do inicio ou do fim.");
+        }
+
         if(passo < 0){
             window.alert("Porfavor coloque um nnumero maior ou igual a zero")
         }
