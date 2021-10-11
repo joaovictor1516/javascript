@@ -8,7 +8,7 @@ function calcular(){
     } else{
         select_resultado.innerText = "";
         for(let constante = 0; constante <= 10; constante++){
-            resultado.addEventListener("click", calculo(constante, numero));
+            let resultado = document.createElement('option');
             resultado.text = `${constante} x ${numero} = ${constante*numero}`;
             select_resultado.appendChild(resultado);
         }
