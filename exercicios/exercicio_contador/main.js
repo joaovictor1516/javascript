@@ -7,7 +7,6 @@ function contar(){
     let fim = Number(input_fim.value);
     let passo = Number(input_passo.value);
 
-
     if(input_inicio.value.length === 0){
         window.alert("Por favor preencha o espaço do inicio");
     } 
