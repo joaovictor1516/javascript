@@ -1,0 +1,1 @@
+Esses exercícios são os exercícios propostos no curso de javascript do curso em vídeo, com algumas adições.
