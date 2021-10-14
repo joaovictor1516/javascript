@@ -13,14 +13,21 @@
     </header>
 
     <main>
-        <div>Peso:</div>
-        <input type="number" name="input_peso" id="input_peso">
-        <br>
-        <div>Altura:</div>
-        <input type="number" name="input_altura" id="input_altura">
-        <br>
-        <div id="div_imc"></div>
-        <input type="button" value="Calcular" onclick="calcular()">
+        <div>
+            Peso:
+            <input type="number" name="input_peso" id="input_peso" placeholder="70,0 kg">
+            <br>
+            Altura:
+            <input type="number" name="input_altura" id="input_altura" placeholder="1,90 m">
+        </div>
+        <input type="button" value="Calcular" id="botao" onclick="calcular()">
+
+        <table>
+
+        </table>
+        <div id="div_imc">
+            Seu IMC é:
+        </div>
     </main>
 
     <footer>
