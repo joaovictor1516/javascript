@@ -20,16 +20,29 @@
             Altura:
             <input type="number" name="input_altura" id="input_altura" placeholder="1,90 m">
         </div>
-        <input type="button" value="Calcular" id="botao" onclick="calcular()">
+        <input type="button" value="Calcular" id="botao" >
 
-        <table>
-
-        </table>
         <div id="div_imc">
-            Seu IMC é:
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th colspan="2">Tabela de classificação do IMC</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>IMC menor que 18,5</td>
+                        <td><a href="https://www.tuasaude.com/dieta-para-engordar/">Você está abaixo do peso ideal</a></td>
+                    </tr>
+                    <tr class="teste">
+                        <td>IMC entre 18,5 e 24,5</td>
+                        <td><a href="https://www.tuasaude.com/dieta-para-engordar/">Você está com o peso ideal</a></td>
+                    </tr>
+                </tbody>
+            </table>
+            <p id="p_imc">Seu IMC é:</p>
         </div>
     </main>
-
     <footer>
         <div>
             &copy;Jão
