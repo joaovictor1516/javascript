@@ -16,10 +16,13 @@
         <div>
             Peso:
             <input type="number" name="input_peso" id="input_peso" placeholder="70,0 kg">
+
             <br>
+
             Altura:
             <input type="number" name="input_altura" id="input_altura" placeholder="1,90 m">
         </div>
+
         <input type="button" value="Calcular" id="botao" >
 
         <div id="div_imc">
@@ -29,20 +32,44 @@
                         <th colspan="2">Tabela de classificação do IMC</th>
                     </tr>
                 </thead>
+
                 <tbody>
-                    <tr>
+                    <tr id="tr_abixo_do_peso">
                         <td>IMC menor que 18,5</td>
-                        <td><a href="https://www.tuasaude.com/dieta-para-engordar/">Você está abaixo do peso ideal</a></td>
+                        <td><a href="https://www.tuasaude.com/dieta-para-engordar/">Abaixo do peso ideal</a></td>
                     </tr>
-                    <tr class="teste">
+
+                    <tr id="tr_peso_ideal">
                         <td>IMC entre 18,5 e 24,5</td>
-                        <td><a href="https://www.tuasaude.com/dieta-para-engordar/">Você está com o peso ideal</a></td>
+                        <td><a href="https://www.tuasaude.com/dieta-para-engordar/">Peso ideal</a></td>
+                    </tr>
+
+                    <tr id="tr_sobre_peso">
+                        <td>IMC entre 25 e 29,9</td>
+                        <td><a href="https://www.tuasaude.com/dieta-para-engordar/">Sobre peso</a></td>
+                    </tr>
+
+                    <tr id="tr_obesidade_1">
+                        <td>IMC entre 30 e 34,5</td>
+                        <td><a href="https://www.tuasaude.com/dieta-para-engordar/">Obesidade grau 1</a></td>
+                    </tr>
+
+                    <tr id="tr_obesidade_2">
+                        <td>IMC entre 35 e 40</td>
+                        <td><a href="https://www.tuasaude.com/dieta-para-engordar/">Obesidade grau 2</a></td>
+                    </tr>
+
+                    <tr id="tr_obesidade_3">
+                        <td>IMC maior que 40</td>
+                        <td><a href="https://www.tuasaude.com/dieta-para-engordar/">Obesidade grau 3</a></td>
                     </tr>
                 </tbody>
             </table>
+
             <p id="p_imc">Seu IMC é:</p>
         </div>
     </main>
+    
     <footer>
         <div>
             &copy;Jão
