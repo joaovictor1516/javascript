@@ -9,6 +9,10 @@ input{
     margin: 0.3%;
 }
 
+body{
+    background-color: rgba(176, 20, 238, 0.836);
+}
+
 table{
     margin: auto;
 }
@@ -16,4 +20,19 @@ table{
 a{
     text-decoration: none;
     color: black;
+}
+
+main{
+    border-radius: 10px;
+    width: 25%;
+    margin-left: 37.5%;
+    background-color: white;
+}
+
+p{
+    padding: 0 0 0 5px;
+}
+
+.entrada{
+    padding: 5px 0 0 0;
 }
