@@ -1,11 +1,11 @@
 const botao = document.getElementById("botao");
 
-    const tr_abaixo_do_peso = document.getElementById("tr_abaixo_do_peso"),
-    tr_peso_ideal = document.getElementById("tr_peso_ideal"),
-    tr_sobre_peso = document.getElementById("tr_sobre_peso"),
-    tr_obesidade_1 = document.getElementById("tr_obesidade_1"),
-    tr_obesidade_2 = document.getElementById("tr_obesidade_2"),
-    tr_obesidade_3 = document.getElementById("tr_obesidade_3");
+const tr_abaixo_do_peso = document.getElementById("tr_abaixo_do_peso"),
+tr_peso_ideal = document.getElementById("tr_peso_ideal"),
+tr_sobre_peso = document.getElementById("tr_sobre_peso"),
+tr_obesidade_1 = document.getElementById("tr_obesidade_1"),
+tr_obesidade_2 = document.getElementById("tr_obesidade_2"),
+tr_obesidade_3 = document.getElementById("tr_obesidade_3");
 
 function calcular() {
     const input_altura = document.getElementById("input_altura"),
