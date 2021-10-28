@@ -1,12 +1,7 @@
 class Conta{
-    constructor(){
-        this.id = 0;
-        this.lista = [];
-    }
-    
     login(){
         if(this.recebeDados()){
-            window.location.href = "oi.html";
+            window.location.href = "curriculo.html";
         }
     }
 
