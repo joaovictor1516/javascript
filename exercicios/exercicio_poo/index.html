@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio de POO</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <h1>Loja de teste</h1>
+    </header>
+    
+    <main>
+        <h2>Meus produtos:</h2>
+        <span>Se liga nesses produtos</span>
+        <br>
+        <div>
+            <div class="div_produto">
+                <label class="enunciado_produto">Produto:</label>
+                <input type="text" id="produto" placeholder="Produto">
+            </div>
+
+            <div class="div_preco">
+                <label class="enunciado_preco">Preço:</label>
+                <input type="number" id="preco" placeholder="Preço">
+            </div>
+            
+            <button onclick="produto.salvar()">Adicionar</button>
+            <button onclick="produto.remover()">Remover</button>
+        </div>
+
+        <div>
+            <table class="tabela">
+                <thead>
+                    <th class="produto">ID</th>
+                    <th>Produto</th>
+                    <th>Preço</th>
+                    <th class="produto">Ação</th>
+                </thead>
+                <tbody id="tb_corpo"></tbody>
+            </table>
+        </div>
+    </main>
+
+    <footer>
+        &copy; Jão
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
