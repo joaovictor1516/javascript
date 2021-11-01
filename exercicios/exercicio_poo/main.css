@@ -24,6 +24,7 @@ main{
 input{
     text-align: left;
     border-style: none;
+    border: 1px solid black;
 }
 
 button{
@@ -36,6 +37,11 @@ footer{
     font-size: 17px;
 }
 
+img{
+    width: 20px;
+    
+}
+
 .div_preco{
     margin: 2px 0;
 }
@@ -46,6 +52,8 @@ footer{
 
 .tabela{
     text-align: center;
-    border: 1px solid;
-    margin: 5px 0 0 120px;
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin: 5px 0 0 0;
+    width: 100%;
 }

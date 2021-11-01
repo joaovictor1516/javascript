@@ -30,21 +30,29 @@ class Produtos{
             td_id = tr.insertCell(),
             td_produto = tr.insertCell(),
             td_preco = tr.insertCell(),
-            td_acao = tr.insertCell();
+            td_acao = tr.insertCell(),
+            td_quantidade = tr.insertCell();
+               
 
             td_id.innerText = this.lista[i].id;
             td_produto.innerText = this.lista[i].nome;
             td_preco.innerText = this.lista[i].preco;
+            
+            for(let i = 1; i <= 10; i++){
+                const quantidade = document.createElement("object");
+                quantidade.innerText = i;
+                td_quantidade.appendChild(quantidade);
+            }
 
             let botao_remover = document.createElement('img');
-            botao_remover.setAttribute("src","imagens/imagem.jpg");//da linha 40 até a 45 é um teste com eventos colocados via dom, funcionaram com sucesso.
-            let handle_pointerenter = () => {alert('olá'); 
-            tb_corpo.deleteRow(i); 
-            this.lista.splice(i);};
-            let handle_poiterout = () => {alert('tchau');};
+            botao_remover.setAttribute("src","https://image.flaticon.com/icons/png/512/18/18297.png");
+
+            let handle_click = () => {tb_corpo.deleteRow(i); 
+            this.lista.splice(i);
+            td_id.value--;};
+            
             td_acao.appendChild(botao_remover);
-            botao_remover.addEventListener("pointerenter", handle_pointerenter);
-            botao_remover.addEventListener("pointerout",handle_poiterout);
+            botao_remover.addEventListener("click", handle_click);
             console.log(this.lista);
         }
     }
@@ -54,6 +62,7 @@ class Produtos{
         dado.id = this.id,
         dado.nome = document.getElementById("produto").value,
         dado.preco = document.getElementById("preco").value;
+        dado.quantidade = document.createElement("select");
         return dado;
     }
 
