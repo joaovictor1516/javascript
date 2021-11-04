@@ -1,17 +1,33 @@
+//importando módulos
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import Componente01 from './Componente01';
+import Componente02 from './Componente02';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+//componentes
+class PrimeiroComponente extends React.Component{
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+    //construtor
+    constructor(props){
+        super(props);
+        this.state = {cargo: 'estagiário'};
+    }
+
+    render(){
+        return(
+        <div> 
+            <Componente02/>
+            <h1>{this.state.cargo}</h1>
+            <h1>{this.props.sobre.nome}</h1> 
+            <h1>{this.props.sobre.idade}</h1>
+            <Componente01/>
+        </div>);//os dois ultimos h1 são props e o outro h1 é state.
+    }
+
+}
+
+//json:
+const dados = {nome: "jão", idade:25}
+
+//render no caso nome é o primeiro promp
+ReactDOM.render(<PrimeiroComponente sobre = {dados}/>, document.getElementById("root"));
