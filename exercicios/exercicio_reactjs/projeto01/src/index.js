@@ -1,33 +1,28 @@
-//importando módulos
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Componente01 from './Componente01';
-import Componente02 from './Componente02';
+import './index.css'
 
-//componentes
-class PrimeiroComponente extends React.Component{
-
-    //construtor
-    constructor(props){
-        super(props);
-        this.state = {cargo: 'estagiário'};
-    }
+class Condicionais extends React.Component{
 
     render(){
+        //vetor
+        let cores = ['azul', 'amarelo', 'laranja', 'vermelho', 'verde'];
+        
+        const css = {
+            color: 'MediumOrchid'
+        }
+
+        //lista
+        let lista = cores.map((cor, index) => {
+            return <li key = {index} style = {css}>{index} - {cor}</li>
+        }) // cor vai receber o valor da vetor, por exemplo, em cores[0] cor = azul. O index vai mostrar o indice da vetor.
+
         return(
-        <div> 
-            <Componente02/>
-            <h1>{this.state.cargo}</h1>
-            <h1>{this.props.sobre.nome}</h1> 
-            <h1>{this.props.sobre.idade}</h1>
-            <Componente01/>
-        </div>);//os dois ultimos h1 são props e o outro h1 é state.
+            <ul style = {{backgroundColor:'LightBlue', borderRadius:'5px', width:'7%', margin: '0 0 0 50%'}}>
+                {lista}
+            </ul>
+        );
     }
+} 
 
-}
-
-//json:
-const dados = {nome: "jão", idade:25}
-
-//render no caso nome é o primeiro promp
-ReactDOM.render(<PrimeiroComponente sobre = {dados}/>, document.getElementById("root"));
+ReactDOM.render(<Condicionais/>, document.getElementById("root"));
