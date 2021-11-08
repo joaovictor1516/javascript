@@ -6,10 +6,11 @@ class Condicionais extends React.Component{
 
     render(){
         //vetor
-        let cores = ['azul', 'amarelo', 'laranja', 'vermelho', 'verde'];
+        let cores = ['azul', 'amarelo', 'laranja', 'vermelho', 'verde', 'violeta'];
         
         const css = {
-            color: 'MediumOrchid'
+            color: 'MediumOrchid',
+            margin: '2px 0'
         }
 
         //lista
