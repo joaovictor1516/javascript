@@ -4,7 +4,7 @@ class Tabela extends React.Component{
 
     render(){
         return(
-        <table className = 'table'>
+        <table className = 'table estilo'>
             <thead>
                 <tr>
                     <th>Nome</th>
